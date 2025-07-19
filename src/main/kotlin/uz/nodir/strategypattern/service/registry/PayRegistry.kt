@@ -33,7 +33,7 @@ class PayRegistry(
         registerPaymentServices()
     }
 
-    fun registerPaymentServices() {
+    private fun registerPaymentServices() {
         log.info("Registering pay services")
 
         if (payServices.isEmpty()) {
@@ -56,5 +56,15 @@ class PayRegistry(
         log.info("Pay services registered")
     }
 
+
+    fun getServiceByType(type: Processing): PayService {
+
+        val payService = payServicesList[type]
+
+        return payService ?: run {
+            throw IllegalArgumentException("Pay service $type not found")
+        }
+
+    }
 
 }

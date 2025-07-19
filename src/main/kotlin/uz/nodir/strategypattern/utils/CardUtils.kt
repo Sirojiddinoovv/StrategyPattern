@@ -22,7 +22,7 @@ object CardUtils {
         val mask = "".padStart(6, '*')
 
         return buildString {
-            append(card.take(5))
+            append(card.take(4))
             append(mask)
             append(card.takeLast(4))
         }

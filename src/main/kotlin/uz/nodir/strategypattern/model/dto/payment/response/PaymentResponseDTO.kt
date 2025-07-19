@@ -14,6 +14,6 @@ import com.fasterxml.jackson.annotation.JsonInclude
 data class PaymentResponseDTO(
     val card: String,
 
-    val refNum: String,
+    val refNum: Int,
 ) {
 }

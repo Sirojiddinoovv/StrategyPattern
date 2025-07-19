@@ -1,4 +1,4 @@
-package uz.nodir.strategypattern.service
+package uz.nodir.strategypattern.service.payment
 
 import jakarta.validation.constraints.NotNull
 import uz.nodir.strategypattern.model.dto.payment.request.PaymentRequestDTO

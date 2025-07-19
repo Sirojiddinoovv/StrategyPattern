@@ -4,6 +4,7 @@ import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
 import uz.nodir.strategypattern.model.dto.payment.request.PaymentRequestDTO
 import uz.nodir.strategypattern.model.dto.payment.response.PaymentResponseDTO
+import uz.nodir.strategypattern.model.enums.Processing
 import uz.nodir.strategypattern.service.payment.PayService
 import kotlin.random.Random
 
@@ -34,5 +35,9 @@ class WalletPayServiceImpl: PayService {
 
         log.info("Finished command to pay from WALLET with response dto: $response")
         return response
+    }
+
+    override fun type(): Processing {
+        return Processing.WALLET
     }
 }

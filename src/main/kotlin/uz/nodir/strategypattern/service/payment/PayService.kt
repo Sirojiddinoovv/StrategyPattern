@@ -3,6 +3,7 @@ package uz.nodir.strategypattern.service.payment
 import jakarta.validation.constraints.NotNull
 import uz.nodir.strategypattern.model.dto.payment.request.PaymentRequestDTO
 import uz.nodir.strategypattern.model.dto.payment.response.PaymentResponseDTO
+import uz.nodir.strategypattern.model.enums.Processing
 
 
 /**
@@ -15,4 +16,6 @@ import uz.nodir.strategypattern.model.dto.payment.response.PaymentResponseDTO
 interface PayService {
 
     fun process(@NotNull requestDTO: PaymentRequestDTO): PaymentResponseDTO
+
+    fun type(): Processing
 }

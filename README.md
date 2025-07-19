@@ -37,7 +37,7 @@ java -jar target/strategy-pattern-0.0.1-SNAPSHOT.jar
 ```json
 {
   "pc": "VISA",
-  "cardNumber": "4111111111111111",
+  "cardNumber": "4111111111119908",
   "amount": 100.0
 }
 ```
@@ -46,7 +46,7 @@ java -jar target/strategy-pattern-0.0.1-SNAPSHOT.jar
 ```json
 {
     "refNum": 7888833,
-    "card": "5512******9908"
+    "card": "4111******9908"
 }
 ```
 
